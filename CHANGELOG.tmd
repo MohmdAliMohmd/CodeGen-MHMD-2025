@@ -1,0 +1,35 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [Version 1]
+Released by: [Mohammad Ali Mohammad](https://github.com/MohmdAliMohmd/CodeGen-MHMD-2025)
+
+### Added
+
+#### In clsDataAccessLayerGenerator
+- private string _GetParameterList2(clsColumn column, bool WithPrimaryKey, bool WithReferences, bool WithDataType = true, string Prefix = "", bool AssigningValues = false)
+- private void _GenerateFunction_GetObjectByColumn2(clsColumn column)
+- private void _GenerateFunction_GetObjByColumn()
+
+#### In clsBusinessLayerGenerator
+- private string _GetParameterList2(clsColumn column, bool WithPrimaryKey, bool WithReferences, bool WithDataType = true, string Prefix = "", bool AssigningValues = false)
+- private void _GenerateMethod_FindbyColumn(clsColumn column)
+- _GenerateFunction_FindByColumn()
+
+---
+
+## [Version 0]
+Created by: [Khalid Alshammari](https://github.com/5ldv)
+
+### Base Implementation
+
+#### In clsDataAccessLayerGenerator
+- private string _GetParameterList(bool WithPrimaryKey, bool WithReferences, bool WithDataType = true, string Prefix = "", bool AssigningValues = false)
+- private void _GenerateFunction_GetObjectByID()
+
+#### In clsBusinessLayerGenerator
+- private string _GetParameterList(bool WithPrimaryKey, bool WithReferences, bool WithDataType = true, string Prefix = "", bool AssigningValues = false)
+- _GenerateMethod_Find();
+
+---
