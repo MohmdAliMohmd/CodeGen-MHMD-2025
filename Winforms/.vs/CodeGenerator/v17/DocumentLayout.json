@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Programming_By_Mhmd\\CodeGen MHMD 2025\\Winforms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2ECDB1CA-6725-4FA1-B599-A6B71A83BB31}|..\\CodeGenerator\\CodeGenerator.csproj|f:\\programming_by_mhmd\\codegen mhmd 2025\\codegenerator\\clsdataaccesslayergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsDataAccessLayerGenerator.cs",
+              "DocumentMoniker": "F:\\Programming_By_Mhmd\\CodeGen MHMD 2025\\CodeGenerator\\clsDataAccessLayerGenerator.cs",
+              "RelativeDocumentMoniker": "..\\CodeGenerator\\clsDataAccessLayerGenerator.cs",
+              "ToolTip": "F:\\Programming_By_Mhmd\\CodeGen MHMD 2025\\CodeGenerator\\clsDataAccessLayerGenerator.cs",
+              "RelativeToolTip": "..\\CodeGenerator\\clsDataAccessLayerGenerator.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T06:50:27.896Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

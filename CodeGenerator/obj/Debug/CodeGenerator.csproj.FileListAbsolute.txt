@@ -1,0 +1,18 @@
+E:\CODE GENERATOR\CodeGen-main\CodeGen-main\CodeGenerator\bin\Debug\CodeGenerator.dll
+E:\CODE GENERATOR\CodeGen-main\CodeGen-main\CodeGenerator\bin\Debug\CodeGenerator.pdb
+E:\CODE GENERATOR\CodeGen-main\CodeGen-main\CodeGenerator\obj\Debug\CodeGenerator.csproj.AssemblyReference.cache
+E:\CODE GENERATOR\CodeGen-main\CodeGen-main\CodeGenerator\obj\Debug\CodeGenerator.csproj.CoreCompileInputs.cache
+E:\CODE GENERATOR\CodeGen-main\CodeGen-main\CodeGenerator\obj\Debug\CodeGenerator.dll
+E:\CODE GENERATOR\CodeGen-main\CodeGen-main\CodeGenerator\obj\Debug\CodeGenerator.pdb
+E:\CODE GENERATOR\CodeGen-main-MHMD\CodeGen-main-MHMD\CodeGenerator\bin\Debug\CodeGenerator.dll
+E:\CODE GENERATOR\CodeGen-main-MHMD\CodeGen-main-MHMD\CodeGenerator\bin\Debug\CodeGenerator.pdb
+E:\CODE GENERATOR\CodeGen-main-MHMD\CodeGen-main-MHMD\CodeGenerator\obj\Debug\CodeGenerator.csproj.AssemblyReference.cache
+E:\CODE GENERATOR\CodeGen-main-MHMD\CodeGen-main-MHMD\CodeGenerator\obj\Debug\CodeGenerator.csproj.CoreCompileInputs.cache
+E:\CODE GENERATOR\CodeGen-main-MHMD\CodeGen-main-MHMD\CodeGenerator\obj\Debug\CodeGenerator.dll
+E:\CODE GENERATOR\CodeGen-main-MHMD\CodeGen-main-MHMD\CodeGenerator\obj\Debug\CodeGenerator.pdb
+F:\Programming_By_Mhmd\CodeGen MHMD 2025\CodeGenerator\bin\Debug\CodeGenerator.dll
+F:\Programming_By_Mhmd\CodeGen MHMD 2025\CodeGenerator\bin\Debug\CodeGenerator.pdb
+F:\Programming_By_Mhmd\CodeGen MHMD 2025\CodeGenerator\obj\Debug\CodeGenerator.csproj.AssemblyReference.cache
+F:\Programming_By_Mhmd\CodeGen MHMD 2025\CodeGenerator\obj\Debug\CodeGenerator.csproj.CoreCompileInputs.cache
+F:\Programming_By_Mhmd\CodeGen MHMD 2025\CodeGenerator\obj\Debug\CodeGenerator.dll
+F:\Programming_By_Mhmd\CodeGen MHMD 2025\CodeGenerator\obj\Debug\CodeGenerator.pdb
