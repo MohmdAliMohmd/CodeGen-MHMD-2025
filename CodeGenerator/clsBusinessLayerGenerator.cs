@@ -218,6 +218,23 @@ namespace CodeGenerator
             return cls{TableSingularName}Data.Is{TableSingularName}Exist({_PrimaryKeyColumn.ColumnName});
         }}");
         }
+
+        private void _GenerateMethod_IsObjectExistByColumn(clsColumn column)
+        {
+            _sbBusinessClass.Append($@"
+        public static bool Is{TableSingularName}ExistBy{column.ColumnName}({column.ColumnDataType} {column.ColumnName})
+        {{
+            return cls{TableSingularName}Data.Is{TableSingularName}ExistBy{column.ColumnName}({column.ColumnName});
+        }}");
+        }
+
+        private void _GenerateMethod_IsObjectExistByColumn()
+        {
+            foreach (clsColumn column in _ColumnsList)
+            {
+                _GenerateMethod_IsObjectExistByColumn(column);
+            }
+        }
         private void _GenerateMethod_Find()
         {
             _sbBusinessClass.AppendLine($"\r\n        public static {TableClassName} Find({_PrimaryKeyColumn.ColumnDataType} {_PrimaryKeyColumn.ColumnName})");
@@ -309,8 +326,9 @@ namespace CodeGenerator
             _GenerateAddNewObjectMethod();
             _GenerateUpdateObjectMethod();
             _GenerateMethod_DeleteObject();
-            _GenerateMethod_IsObjectExist();
+            // _GenerateMethod_IsObjectExist();
             //_GenerateMethod_Find();
+            _GenerateMethod_IsObjectExistByColumn();
             _GenerateFunction_FindByColumn();
             _GenerateSaveMethod();
             _GenerateGetObjectsMethod();

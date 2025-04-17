@@ -480,6 +480,45 @@ namespace CodeGenerator
         }}");
 
         }
+        private void _GenerateMethod_IsObjectExistBy(clsColumn column)
+        {
+            _sbDataAccessClass.AppendLine($@"        public static bool Is{TableSingularName}ExistBy{column.ColumnName}({column.ColumnDataType} {column.ColumnName})
+        {{
+            bool isFound = false;
+            string query = ""SELECT Found=1 FROM {TableName} WHERE {column.ColumnName} = @{column.ColumnName}"";
+            try{{
+                    using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+                       {{
+                            using(SqlCommand command = new SqlCommand(query, connection))
+                            {{
+                                command.Parameters.AddWithValue(""@{column.ColumnName}"", {column.ColumnName});
+                                connection.Open();
+                                using(SqlDataReader reader = command.ExecuteReader())
+                                    {{
+                                        isFound = reader.HasRows;
+                                    }}
+                              }}
+                        }}
+                }}
+                 catch(Exception ex)
+                {{
+                  isFound = false;
+                 }}
+            finally
+            {{
+               
+            }}
+
+            return isFound;
+        }}");
+        }
+        private void _GenerateFunction_IsObjectExistByColumn()
+        {
+            foreach (clsColumn column in _ColumnsList)
+            {
+                _GenerateMethod_IsObjectExistBy(column);
+            }
+        }
         private void _GenerateMethod_IsObjectExist()
         {
             _sbDataAccessClass.AppendLine($@"        public static bool Is{TableSingularName}Exist({_PrimaryKeyColumn.ColumnDataType} {_PrimaryKeyColumn.ColumnName})
@@ -563,6 +602,7 @@ namespace CodeGenerator
             _GenerateMethod_UpdateObject();
             _GenerateMethod_DeleteObject();
             _GenerateMethod_IsObjectExist();
+            _GenerateFunction_IsObjectExistByColumn();//Mhmd Update
             _GenerateMethod_GetAllObjects();
             _GenerateClosingCurlyBrackets();
             return _sbDataAccessClass;
